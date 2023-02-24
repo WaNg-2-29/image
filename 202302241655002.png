@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>HKBU Moodle: Log in to the site</title>
+    <link rel="shortcut icon" href="https://buelearning.hkbu.edu.hk/theme/image.php/boost/theme/1664269590/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, HKBU Moodle: Log in to the site" />
+<link rel="stylesheet" type="text/css" href="https://buelearning.hkbu.edu.hk/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://buelearning.hkbu.edu.hk/theme/styles.php/boost/1664269590_1/all" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/buelearning.hkbu.edu.hk","sesskey":"CTD9kgQixZ","sessiontimeout":"7200","sessiontimeoutwarning":1200,"themerev":"1664269590","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1659180443","admin":"admin","svgicons":true,"usertimezone":"Asia\/Hong_Kong","contextid":1,"langrev":1677186040,"templaterev":"1659180443"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/buelearning.hkbu.edu.hk\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/buelearning.hkbu.edu.hk\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/buelearning.hkbu.edu.hk\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/buelearning.hkbu.edu.hk\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/buelearning.hkbu.edu.hk\/theme\/yui_combo.php?m\/1659180443\/","combine":true,"comboBase":"https:\/\/buelearning.hkbu.edu.hk\/theme\/yui_combo.php?","ext":false,"root":"m\/1659180443\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_oublog-tagselector":{"requires":["base","node","autocomplete","autocomplete-filters","autocomplete-highlighters"]},"moodle-mod_oublog-savecheck":{"requires":["base","node","io","panel","moodle-core-notification-alert"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/buelearning.hkbu.edu.hk\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/buelearning.hkbu.edu.hk\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1659180443\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/buelearning.hkbu.edu.hk\/lib\/javascript.php\/1659180443\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/buelearning.hkbu.edu.hk\/lib\/javascript.php\/1659180443\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<meta name="Description" content="HKBU eLearning Platform, BUeLearning, HKBU Moodle, BUMoodle, LMS" />
+<script>
+function bulogincheck() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        }
+    };
+    xhttp.open("GET", "https://buelearning.hkbu.edu.hk/busec/seccheck.php", true);
+    xhttp.send();
+}
+</script>
+<!-- BEGIN: Added by Priere [ARC] -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tippy.js@5.2.1/dist/tippy-bundle.iife.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tippy.js@5.2.1/animations/scale.css"></link>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/poppins-font@1.0.1/index.min.css">
+<!-- END: Added by Priere [ARC] --><meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body  id="page-login-index" class="format-site  path-login dir-ltr lang-en yui-skin-sam yui3-skin-sam buelearning-hkbu-edu-hk pagelayout-login course-1 context-1 notloggedin ">
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script src="https://buelearning.hkbu.edu.hk/lib/javascript.php/1659180443/lib/babel-polyfill/polyfill.min.js"></script>
+<script src="https://buelearning.hkbu.edu.hk/lib/javascript.php/1659180443/lib/polyfills/polyfill.js"></script>
+<script src="https://buelearning.hkbu.edu.hk/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://buelearning.hkbu.edu.hk/lib/javascript.php/1659180443/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<!-- BEGIN: Added by Priere [ARC] -->
+<script>
+var mLatestSemCatID = 457; // XXX: MUST CHANGE! CatID of current year sem
+var mLatestSemCatTitle = "2022 Semester 2"; // XXX: MUST CHANGE! Cat name of current year sem
+const mCurrentYr = 22; // XXX: MUST CHANGE! Current academic year
+const mSupportUsernames = []; // XXX: MUST CHANGE! Names of support users, e.g. const mSupportUsernames = ["Admin User"];
+
+const mOnLoginPage = document.location.href.includes('/login/');
+const mOnCourseCatPage = document.location.href.includes('/course/index.php?categoryid=');
+
+var mYrSem = [];
+var mCatIDCatNameSorted = [];
+var mCourseList = [];
+
+var mIsAdmUser;
+var mEnrolledYrSem;
+var mEnrolledCourseID;
+
+var mEnhancementDisabled;
+var mIsMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+var strMyCourses = "";
+
+function mIsAdm() {
+    if (mIsAdmUser !== undefined) {
+        return mIsAdmUser;
+    }
+    let username = document.querySelector('span.usertext').innerText;
+    let adm = (username.toLowerCase().includes('admin') || (document.querySelectorAll('a.list-group-item[data-key="sitesettings"]').length > 0));
+    let support = (username.toLowerCase().includes('support') || mSupportUsernames.includes(username));
+    if (adm) {
+        document.querySelector('.userbutton').innerHTML = "ADM - " + document.querySelector('.userbutton').innerHTML;
+    } else if (support) {
+        document.querySelector('.userbutton').innerHTML = "SUP - " + document.querySelector('.userbutton').innerHTML;
+    }
+    mIsAdmUser = (adm || support);
+    return mIsAdmUser;
+}
+
+var mFCLR;
+var mFCLLL;
+var mFCLLink = [];
+
+function mGetFCL() {
+    if (mFCLR !== undefined && mFCLLL !== undefined) {
+        return;
+    }
+    if (document.querySelectorAll('.block-fcl__rubric').length > 0 && document.querySelectorAll('a.block-fcl__list__link').length > 0) {
+        mFCLR = $('.block-fcl__rubric');
+        mFCLLL = $('a.block-fcl__list__link');
+        for (let m = 0; m < mFCLR.length; m++) {
+            mFCLLink[m] = $('#' + mFCLR[m].getAttribute('aria-controls')).find('a.block-fcl__list__link');
+        }
+    } else {
+        console.log('FCL does not exist. Loading from HOME.');
+        $.ajax({
+            url: "/index.php",
+            type: 'GET',
+            async: false, 
+            dataType: 'html',
+            success: function (data) {
+                data = new DOMParser().parseFromString(data, "text/html");
+                mFCLR = $(data).find('.block-fcl__rubric');
+                mFCLLL = $(data).find('a.block-fcl__list__link');
+                for (let m = 0; m < mFCLR.length; m++) {
+                    if (!mFCLR[m].innerText.includes('Semester')) {
+                        mFCLLink[m] = $(data).find('#' + mFCLR[m].getAttribute('aria-controls')).find('a.block-fcl__list__link');
+                    }
+                }
+            }
+        });
+    }
+}
+
+function mGetEnrolledYrSem() {
+    if (mEnrolledYrSem !== undefined && Array.isArray(mEnrolledYrSem)) {
+        return mEnrolledYrSem;
+    }
+    mGetFCL();
+    mEnrolledYrSem = [];
+    for (let i = 0; i < mFCLR.length; i++) {
+        let t = $(mFCLR[i]).text().trim();
+        if (t.includes(' Semester ')) {
+            mEnrolledYrSem.push(t.split('-')[0] + t.charAt(t.length - 1));
+        }
+    }
+    return mEnrolledYrSem;
+}
+
+function mIsEnrolled(courseid) {
+    if (mEnrolledCourseID !== undefined && Array.isArray(mEnrolledCourseID)) {
+        return mEnrolledCourseID.includes(courseid);
+    }
+    mGetFCL();
+    mEnrolledCourseID = [];
+    for (let i = 0; i < mFCLLL.length; i++) {
+        mEnrolledCourseID.push($(mFCLLL[i]).attr('href').split("/view.php?id=")[1]);
+    }
+    mEnrolledCourseID = [...new Set(mEnrolledCourseID)];
+    return mEnrolledCourseID.includes(courseid);
+}
+
+var mTeacherList = [];
+
+function mGetTeacher(courseid) {
+    if (mTeacherList[courseid] != undefined) {
+        return mTeacherList[courseid];
+    }
+    $.ajax({
+        type: "GET",
+        url: "/course/info.php?id=" + courseid,
+        async: false,
+        dataType: 'html',
+        success: function(data, status) {
+            var t = [];
+            data = $($.parseHTML(data)).find('ul.teachers').find('a').each(function() {
+                t.push($(this).text());
+            });
+            mTeacherList[courseid] = t.join(', ');   
+        }
+    });
+    return mTeacherList[courseid];
+}
+
+function mArrayHasDuplicates(arr) {
+    return arr.length !== new Set(arr).size;
+}
+
+function mDisableEnhancement() {
+    if (mEnhancementDisabled !== undefined) {
+        return mEnhancementDisabled;
+    }
+    let params = new URLSearchParams(document.location.search);
+    mEnhancementDisabled = params.has('nofrills');
+    return mEnhancementDisabled;
+}
+
+document.querySelector("body").style.display = "none"; 
+window.addEventListener('load', function() {
+    document.querySelector("body").style.display = "block";
+});
+
+var mExpandedNav = [];
+if (Cookies.get('mExpandedNav') != undefined) {
+    mExpandedNav = Cookies.get('mExpandedNav').split(',');
+}
+
+for (let i = 0; i < 7; i++) {
+    for (let j = 1; j < 4; j++) {
+        mYrSem[(mCurrentYr - i).toString() + j] = "20" + (mCurrentYr - i) + " Semester " + j;
+    }
+}
+
+if (mOnLoginPage || Cookies.get('mCatIDCatNameSorted') == undefined) {
+    Cookies.set('mCatIDCatNameSorted', ''); // When mCatIDCatNameSorted is not available in cookies, or sign in Moodle (again), reset them in cookies
+}
+
+if (!mOnLoginPage) { 
+    // Check if category IDs - mCatIDCatNameSorted available in cookies
+    if (Cookies.get('mCatIDCatNameSorted') != '[]' && Cookies.get('mCatIDCatNameSorted') != '') {
+        try {
+            mCatIDCatNameSorted = JSON.parse(Cookies.get('mCatIDCatNameSorted'));
+            console.log('Categories get from cookies.');
+        } catch (e) {
+            console.log(e);
+            mGetCats();
+        }
+    } else {
+        mGetCats();
+    }
+}
+
+function mFixWidth() {
+    if (document.location.href.includes('/course/index.php') || document.location.href.includes('/course/search.php')) {
+        try {
+            let cardBodyWidth = document.querySelector('.card-body').clientWidth + 'px';
+            document.getElementById('region-main-settings-menu').style.width = cardBodyWidth;
+            document.getElementById('region-main').style.width = cardBodyWidth;
+        } catch (e) {
+            console.log(e);
+        } 
+    }   
+}
+
+function mGetCats() {
+    // Get category IDs - mCatIDCatNameURLSorted
+    $.get("/course/index.php?perpage=all", function(data, status) {
+        data = new DOMParser().parseFromString(data, "text/html");
+        var mCatIDCatName = [];
+        var all = $(data).find('div.info').find('a');
+        for (let i = 0; i < all.length; i++) {
+            if (all[i].href.includes('?categoryid=')) {
+                let catid = all[i].href.split('=')[1];
+                let catname = all[i].innerText;
+                mCatIDCatName.push(catid + "|" + catname);
+            }
+        }
+        for (let i = 0; i < 7; i++) {
+            for (let j = 1; j < 4; j++) {
+                for (let m = 0; m < mCatIDCatName.length; m++) {
+                    let catname = mCatIDCatName[m].split("|")[1];
+                    if (catname.substring(0, 4) == (2001 + mCurrentYr - i).toString() && catname.includes('Semester ' + j)) {
+                        mCatIDCatNameSorted.push(mCatIDCatName[m]);
+                    }
+                }
+            }
+        }
+        // Store the variables to cookies
+        Cookies.set('mCatIDCatNameSorted', JSON.stringify(mCatIDCatNameSorted));
+        console.log('Categories get from mGetCats.');
+    });
+}
+
+function mAddCatNav() {
+    mGetFCL();
+    var enrolledYrSem = mGetEnrolledYrSem();
+    try {
+        strMyCourses = document.querySelector('div.list-group-item[data-key="mycourses"]').innerText.toUpperCase().replace(/\n/gm, '').trim();
+    } catch (e) {
+        console.log(e);
+        strMyCourses = "MY COURSES";
+    }
+    var html = '<p class="mMyCourses">' + strMyCourses + '</p>';
+    html += '<nav class="list-group mYrSemCatNav" style="padding-top: 4px"><ul>';
+    var currentCatID = (new URL(document.location)).searchParams.get('categoryid');
+    if (!currentCatID) {
+        currentCatID = 0;
+    }
+    for (let i = 0; i < 7; i++) {
+        html += '<li id="liYrNav' + (mCurrentYr - i) + '"><a class="list-group-item list-group-item-action  " href="javascript:mShowHideYrNav(' + (2000 + mCurrentYr - i) + ')"><div class="ml-0"><div class="media">';
+        html += '<span id="spanYrNavShowHide' + (2000 + mCurrentYr - i) + '">&gt;</span> &nbsp;&nbsp;' + (2000 + mCurrentYr - i) + ' - ' + (mCurrentYr - i + 2001);
+        html += '</div></div></a></li>';
+        for (let m = 0; m < mCatIDCatNameSorted.length; m++) {
+            for (let j = 1; j < 4; j++) {
+                if (mIsAdm() || enrolledYrSem.includes((2000 + mCurrentYr - i).toString() + j)) {
+                    let target = (2000 + mCurrentYr - i) + " Semester " + j;
+                    let catid = mCatIDCatNameSorted[m].split("|")[0];
+                    let catname = mCatIDCatNameSorted[m].split("|")[1];
+                    let catURL = window.location.origin + "/course/index.php?categoryid=" + catid;
+                    if (catname == target) {
+                        html += '<li class="liYrNav' + (2000 + mCurrentYr - i) + '" style="display: none"><a yr=' + (mCurrentYr - i) + ' class="list-group-item list-group-item-action  " href="' + catURL + '" style=""><div class="ml-0"><div class="media">';
+                        if (currentCatID = catid) {
+                            html += '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;';
+                            html += catname;
+                        } else {
+                            html += '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;';
+                            html += catname;
+                        }
+                        html += '</div></div></a></li>';
+                    }
+                }
+            }
+        }
+    }
+    html += '</ul></nav>';
+    if (document.querySelectorAll('a.list-group-item[data-key="sitesettings"]').length == 0) {
+        var h = '';
+        var otherCats = [];
+        // Use FCL to parse courses NOT belong to the semester
+        for (let m = 0; m < mFCLR.length; m++) {
+            if (!otherCats.includes($(mFCLR[m]).text().trim()) && !$(mFCLR[m]).text().includes('Semester')) {
+                var t = $(mFCLR[m]).attr('id').split('tab')[1];
+                let tt = $(mFCLR[m]).text().trim();
+                h += '<li class="liOthersNav" id="liOthersNav' + t + '"><a class="list-group-item list-group-item-action  " href="javascript:mShowHideOthersNav(' + t + ')"><div class="ml-0"><div class="media">';
+                h += '<span style="line-height: 1.25;" id="spanOtherNavShowHide' + t + '">&gt;</span> &nbsp;&nbsp;' + tt;
+                h += '</div></div></a></li>';
+                let fclLink = mFCLLink[m];
+                for (let n = 0; n < fclLink.length; n++) {
+                    if ($(fclLink[n]).attr('title') && $(fclLink[n]).attr('href')) {
+                        let coursename = $(fclLink[n]).attr('title');
+                        let courselink = $(fclLink[n]).attr('href');
+                        h += '<li class="liOthersNav' + t + '" style="display: none" t=' + t + '><a class="list-group-item list-group-item-action  " href="' + courselink + '" style="padding-top: 6px; padding-bottom: 6px"><div class="ml-0"><div class="media" style="padding-left: 20px">';
+                        h += '<span style="line-height: 1.25;">' + coursename + '</span>';
+                        h += '</div></div></a></li>';
+                    }
+                }
+                otherCats.push(tt);
+            }
+        }
+        if (h != '') {
+            html += '<nav class="list-group mOthersCatNav" style="padding-top: 4px"><ul>' + h + '</ul></nav>';
+        }
+    }
+    if (mIsAdm()) {
+        html += '<nav class="list-group" style="padding-top: 4px"><ul><li><a class="list-group-item list-group-item-action  " href="/course/index.php"><div class="ml-0"><div class="media">';
+        html += '✐&nbsp;&nbsp;All courses';
+        html += '</div></div></a></li></ul></nav>';
+    }
+    var nav = document.querySelectorAll("nav.list-group[aria-label]");
+    nav[nav.length-1].insertAdjacentHTML('afterend', html);
+    for (let i = 0; i < 7; i++) {
+        if (!document.querySelectorAll('li.liYrNav' + (2000 + mCurrentYr - i)).length) {
+            document.querySelector('#liYrNav' + (mCurrentYr - i)).style.display = 'none';
+        }
+    }    
+    for (let m = 0; m < mExpandedNav.length; m++) {
+        try {
+            if (mExpandedNav[m] == "") {
+                ;
+            } else if (mExpandedNav[m].startsWith('yr')) {
+                let yr = mExpandedNav[m].replace('yr', '');
+                let all = document.querySelectorAll('li.liYrNav' + yr);
+                for (let i = 0; i < all.length; i++) {
+                    all[i].style.display = 'block';
+                }
+                document.querySelector('#spanYrNavShowHide' + yr).innerHTML = '⌄';
+                document.querySelector('#liYrNav' + yr.replace('20', '')).querySelector('div.media').style.color = "#014898";
+                document.querySelector('#liYrNav' + yr.replace('20', '')).querySelector('div.media').style.fontWeight = 600;
+            } else {
+                let all = document.querySelectorAll('li.liOthersNav' + mExpandedNav[m]);
+                for (let i = 0; i < all.length; i++) {
+                    all[i].style.display = 'block';
+                }
+                document.querySelector('#spanOtherNavShowHide' + mExpandedNav[m]).innerHTML = '⌄';
+                document.querySelector('#liYrNav' + mExpandedNav[m]).querySelector('div.media').style.color = "#014898";
+                document.querySelector('#liYrNav' + mExpandedNav[m]).querySelector('div.media').style.fontWeight = 600;
+            }   
+        } catch (e) {
+            console.log(e);
+        }     
+    }    
+}
+
+// Add nav to Home for mobile
+function mMobileNav() {
+    $('div#mMobileNav').remove();
+    $('div.simplesearchform').css('padding-bottom', '0px');
+    $('div.simplesearchform').css('margin-bottom', '0px');
+    $('div[role="main"] br:last-child').remove();
+    var htmlCode = '<div id="mMobileNav">';
+    htmlCode += '<span style="font-size: 18px; font-weight: 300;">' + $('p.mMyCourses').text() + '</span>';
+    htmlCode += '</div>';
+    // Yr Sem
+    htmlCode += '<nav style="margin-top: 8px; font-size: 14px; font-weight: 300;"><ul style="list-style: none; border: 0.2px solid Gainsboro; padding-left: 0px; ">';
+    var l = $('nav.mYrSemCatNav').find('li');
+    for (let m = 0; m < l.length; m++) {
+        let h = '';
+        if ($(l[m]).attr('id') && $(l[m]).attr('id').includes('liYrNav')) {
+            let yr = $(l[m]).find('a').find('span').attr('id').replace('spanYrNavShowHide', '');
+            h += '<li id="liMobileYrNav' + yr + '" style="padding-top: 2px; padding-bottom: 2px; padding-left: 16px; border: 0.1px solid Gainsboro; ">';
+            h += '<a class="mMobileYrNav" id="mMobileYrNav' + yr + '" href="javascript:mMobileShowHideYrNav(' + yr + ')">' + $(l[m]).find('a').text().replace('⌄', '&gt') + '</a>';
+            h += '</li>';
+        } else {
+            let yr = $(l[m]).find('a').attr('yr');
+            h += '<li class="liMobileYrNav' + yr + '" style="display: none; padding-top: 2px; padding-bottom: 2px; padding-left: 16px; border: 0.1px solid Gainsboro; ">';
+            h += '<a class="mMobileYrNav' + yr + '" href="' + $(l[m]).find('a').attr('href') + '">' + $(l[m]).find('a').text() + '</a>';
+            h += '</li>';
+        }
+        htmlCode += h;
+    }
+    htmlCode += '<ul></nav>';
+    // Others
+    htmlCode += '<nav style="margin-top: 8px; font-size: 14px; font-weight: 300;"><ul style="list-style: none; border: 0.2px solid Gainsboro; padding-left: 0px; ">';
+    l = $('nav.mOthersCatNav').find('li');
+    for (let m = 0; m < l.length; m++) {
+        let h = '';
+        if ($(l[m]).attr('id') && $(l[m]).attr('id').includes('liOthersNav')) {
+            let t = $(l[m]).find('a').find('span').attr('id').replace('spanOtherNavShowHide', '');
+            h += '<li id="liMobileOtherNav' + t + '" style="padding-top: 2px; padding-bottom: 2px; padding-left: 16px; border: 0.1px solid Gainsboro; ">';
+            h += '<a class="mMobileOtherNav" id="mMobileOtherNav' + t + '" href="javascript:mMobileShowHideOtherNav(' + t + ')">' + $(l[m]).find('a').text().replace('⌄', '&gt') + '</a>';
+            h += '</li>';
+        } else {
+            let t = $(l[m]).attr('t');
+            h += '<li class="liMobileOtherNav' + t + '" style="display: none; padding-top: 2px; padding-bottom: 2px; padding-left: 16px; border: 0.1px solid Gainsboro; ">';
+            h += '<a class="mMobileOtherNav' + t + '" href="' + $(l[m]).find('a').attr('href') + '">' + $(l[m]).find('a').text() + '</a>';
+            h += '</li>';
+        }
+        htmlCode += h;
+    }
+    htmlCode += '<ul></nav>';
+    $('div[role="main"]').append(htmlCode);
+    var a = $('a.mMobileYrNav');
+    for (let m = 0; m < a.length; m++) {
+        let yr = $(a[m]).attr('id').replace('mMobileYrNav', '');
+        if ($('a.mMobileYrNav' + (yr - 2000)).length < 1) {
+            $('li#liMobileYrNav' + yr).hide();
+        }
+    }
+}
+
+function mMobileShowHideYrNav(yr) {
+    if (document.querySelector('li.liMobileYrNav' + (yr - 2000)).style.display == 'block') {
+        var v = document.querySelectorAll('li.liMobileYrNav' + (yr - 2000));
+        for (let i = 0; i < v.length; i++) {
+            v[i].style.display = "none";
+        }        
+        document.querySelector('a#mMobileYrNav' + yr).innerText = document.querySelector('a#mMobileYrNav' + yr).innerText.replace('⌄', '>');
+    } else {
+        var v = document.querySelectorAll('li.liMobileYrNav' + (yr - 2000));
+        for (let i = 0; i < v.length; i++) {
+            v[i].style.display = "block";
+        }
+        document.querySelector('a#mMobileYrNav' + yr).innerText = document.querySelector('a#mMobileYrNav' + yr).innerText.replace('>', '⌄');
+    }
+}
+
+function mMobileShowHideOtherNav(t) {
+    if (document.querySelector('li.liMobileOtherNav' + t).style.display == 'block') {
+        var v = document.querySelectorAll('li.liMobileOtherNav' + t);
+        for (let i = 0; i < v.length; i++) {
+            v[i].style.display = "none";
+        }
+        document.querySelector('a#mMobileOtherNav' + t).innerText = document.querySelector('a#mMobileOtherNav' + t).innerText.replace('⌄', '>');
+    } else {
+        var v = document.querySelectorAll('li.liMobileOtherNav' + t);
+        for (let i = 0; i < v.length; i++) {
+            v[i].style.display = "block";
+        }
+        document.querySelector('a#mMobileOtherNav' + t).innerText = document.querySelector('a#mMobileOtherNav' + t).innerText.replace('>', '⌄');
+    }
+}
+
+function mShowHideYrNav(yr) {
+    if (document.querySelector('li.liYrNav' + yr).style.display == 'block') {
+        var v = document.querySelectorAll('li.liYrNav' + yr);
+        for (let i = 0; i < v.length; i++) {
+            v[i].style.display = "none";
+        }        
+        document.querySelector('#spanYrNavShowHide' + yr).innerText = '>';
+        mExpandedNav = mExpandedNav.filter(n => n != ('yr' + yr));
+        document.querySelector('#liYrNav' + yr.toString().replace('20', '')).querySelector('div.media').style.color = 'black';
+        document.querySelector('#liYrNav' + yr.toString().replace('20', '')).querySelector('div.media').style.fontWeight = 400;
+    } else {
+        var v = document.querySelectorAll('li.liYrNav' + yr);
+        for (let i = 0; i < v.length; i++) {
+            v[i].style.display = "block";
+        }  
+        document.querySelector('#spanYrNavShowHide' + yr).innerText = '⌄';
+        mExpandedNav.push('yr' + yr);
+        mExpandedNav = [...new Set(mExpandedNav)];
+        document.querySelector('#liYrNav' + yr.toString().replace('20', '')).querySelector('div.media').style.color = '#014898';
+        document.querySelector('#liYrNav' + yr.toString().replace('20', '')).querySelector('div.media').style.fontWeight = 600;
+    }
+    Cookies.set('mExpandedNav', mExpandedNav.join(','));
+}
+
+function mShowHideOthersNav(t) {
+    if (document.querySelector('li.liOthersNav' + t).style.display == 'block') {
+        var v = document.querySelectorAll('li.liOthersNav' + t);
+        for (let i = 0; i < v.length; i++) {
+            v[i].style.display = "none";
+        }
+        document.querySelector('#spanOtherNavShowHide' + t).innerText = '>';
+        mExpandedNav = mExpandedNav.filter(n => n != (t));
+        document.querySelector('#liOthersNav' + t).querySelector('div.media').style.color = 'black';
+        document.querySelector('#liOthersNav' + t).querySelector('div.media').style.fontWeight = 400;
+    } else {
+        var v = document.querySelectorAll('li.liOthersNav' + t);
+        for (let i = 0; i < v.length; i++) {
+            v[i].style.display = "block";
+        }
+        document.querySelector('#spanOtherNavShowHide' + t).innerText = '⌄';
+        mExpandedNav.push(t);
+        mExpandedNav = [...new Set(mExpandedNav)];
+        document.querySelector('#liOthersNav' + t).querySelector('div.media').style.color = '#014898';
+        document.querySelector('#liOthersNav' + t).querySelector('div.media').style.fontWeight = 600;
+    }
+    Cookies.set('mExpandedNav', mExpandedNav.join(','));
+}
+
+// New version of mGetMyCourseCodes()
+function mPrepareCourseList() {
+    try {
+        console.log('mPrepareCourseListFromFCL');
+        mPrepareCourseListFromFCL();
+    } catch (e) {
+        console.log(e);
+        console.log('mPrepareCourseListFromAjax');
+        mPrepareCourseListFromAjax();
+    }
+}
+
+function mPrepareCourseListFromFCL() {
+    mGetFCL();
+    var title = mLatestSemCatTitle;
+    if (mOnCourseCatPage) {
+        title = document.querySelector('.page-header-headings').innerText;
+    }
+    for (let m = 0; m < mFCLR.length; m++) {
+        var t = $(mFCLR[m]).attr('id').split('tab')[1];
+        var tt = $(mFCLR[m]).text().trim();
+        if (tt.includes('Semester') && title.substring(0,4) == tt.substring(0,4) && title.charAt(title.length-1) == tt.charAt(tt.length-1)) { 
+            console.log(m, tt);
+            let fclLink = mFCLLink[m];
+            for (let n = 0; n < fclLink.length; n++) {
+                if ($(fclLink[n]).attr('href')) {
+                    let coursename = $(fclLink[n]).text().trim().substr(7).trim();
+                    let courseid = $(fclLink[n]).attr('href').split('?id=')[1];
+                    console.log(courseid, coursename);
+                    mCourseList.push(mCourseToString(courseid, coursename));
+                }
+            }
+            break;
+        }
+    }
+    mBuildCourseList(title);
+}
+
+function mPrepareCourseListFromAjax() {
+    var catid = mLatestSemCatID; // XXX: CatID of current year and sem
+    var title = '';
+    if (mOnCourseCatPage) {
+        let params = new URLSearchParams(document.location.search);
+        catid = params.get('categoryid');
+    }
+    let url = "/course/index.php?categoryid=" + catid + "&perpage=all";
+    $.get(url, function(data, status) {
+        data = new DOMParser().parseFromString(data, "text/html");
+        title = $(data).find('div.page-header-headings > h1').text();
+        // Subcats
+        var a = $(data).find('div.subcategories').find('a');
+        for (let i = 0; i < a.length; i++) {
+            let u = a[i].href + "&perpage=all";
+            $.get(u, function(dt, st) {
+                dt = new DOMParser().parseFromString(dt, "text/html");
+                var b = $(dt).find('.coursename > a');
+                for (let j = 0; j < b.length; j++) {
+                    if (b[j].href.includes('view.php?id=')) {
+                        let courseid = b[j].href.split('?id=')[1];
+                        let coursename = b[j].innerText;
+                        mCourseList.push(mCourseToString(courseid, coursename));
+                    }
+                }
+                mBuildCourseList(title);
+            });
+        }
+        // Immediate courses
+        var c = $(data).find('.coursename > a');
+        for (let k = 0; k < c.length; k++) {
+            if (c[k].href.includes('view.php?id=')) {
+                let courseid = c[k].href.split('?id=')[1];
+                let coursename = c[k].innerText;
+                mCourseList.push(mCourseToString(courseid, coursename));
+            }
+            mBuildCourseList(title);
+        }
+    });
+}
+
+// New version of mSelectionDropdownForCourses()
+function mBuildCourseList(title) {
+    mCourseList.sort();
+    try {
+        document.querySelector('#mHomeCourseList').remove();
+    } catch (e) {
+        console.log(e);
+    }
+    try {
+        let mUncatted = document.querySelectorAll('div.mUncatted');
+        for (let i = 0; i < mUncatted.length; i++) {
+            mUncatted[i].remove();
+        }
+    } catch (e) {
+        console.log(e);
+    }
+    var htmlCode = "";
+    var clist = [];
+    // 1. Others
+    for (let m = 0; m < mCourseList.length; m++) {
+        let courseid = mCourseList[m].split('|')[1];
+        if (mIsEnrolled(courseid)) { // Check if enrolled
+            let coursename = mCourseList[m].split('|')[0];
+            let coursetype = mCourseList[m].split('|')[2];
+            let courselink = window.location.origin + "/course/view.php?id=" + courseid;
+            if (coursetype == 'Others') {
+                htmlCode += '<div class="coursebox clearfix mUncatted" courseid=' + courseid + ' data-courseid="' + courseid + '"><div class="info"><div class="coursename"><font color=black>' + coursename + '</font></div><div class="ddCourseSelect">';
+                htmlCode += '<div class="ddCourseType"><a href="/course/view.php?id=' + courseid + '"><button courseid=' + courseid + ' class="btnDDCourseType aCourseType"><font color="black">Visit &nbsp;&nbsp;▸</font></button></a><div class="ddCourseTypeContent"></div></div>';
+                htmlCode += '</div></div></div>';
+            } else {
+                clist.push(coursename);
+            }
+        }
+    }
+    // 2. Regulars
+    // clist = $.unique(clist);
+    for (let m = 0; m < clist.length; m++) {
+        var courseIDType = [];
+        var courseTypes = [];
+        let courseserial = Math.floor(Math.random() * 10000) + 1;
+        for (let n = 0; n < mCourseList.length; n++) {
+            let courseid = mCourseList[n].split('|')[1];
+            if (mIsEnrolled(courseid)) {
+                let coursename = mCourseList[n].split('|')[0];
+                let coursetype = mCourseList[n].split('|')[2];
+                if (coursename == clist[m]) {
+                    courseIDType.push(coursetype + ";" + courseid);
+                    courseTypes.push(coursetype);
+                }
+            }
+        }
+        var hasDuplicates = mArrayHasDuplicates(courseTypes);
+        courseIDType.sort();
+        // Build HTML codes for select
+        var optionHTML = '';
+        for (let o = 0; o < courseIDType.length; o++) {
+            let i = courseIDType[o].split(';')[1];
+            let t = courseIDType[o].split(';')[0];
+            // optionHTML += '<span><a courseid=' + i + ' class="aCourseType" href="javascript:mViewCourse(' + i + ')">' + t + '</a></span>';
+            optionHTML += '<span><a id="aCourse' + i + '" courseid=' + i + ' class="aCourseType ';
+            if (hasDuplicates) {
+                optionHTML += 'aCourseTypeHasDuplicates';
+            }            
+            optionHTML += '" href="/course/view.php?id=' + i + '">' + t + '</a></span>';
+        }
+        // Build HTML codes for div
+        for (let o = 0; o < courseIDType.length; o++) {
+            if (!htmlCode.includes('>' + clist[m] + '<')) {
+                htmlCode += '<div class="coursebox clearfix mUncatted"><div class="info"><div class="coursename"><font color=black>' + clist[m] + '</font></div><div class="ddCourseSelect">';
+                htmlCode += '<div class="ddCourseType" onmouseover="mShowCourseType(' + courseserial + ')" onmouseout="mHideCourseType(' + courseserial + ')" courseserial=' + courseserial + '><button courseserial=' + courseserial + ' class="btnDDCourseType">Section &nbsp;&nbsp;▾</button><div class="ddCourseTypeContent" courseserial=' + courseserial + '>' + optionHTML + '</div></div>';
+                htmlCode += '</div></div></div>';
+            }
+        }
+    }
+    var mTitle = document.querySelector('.mTitle');
+    if (document.location.href.includes('/course/')) {
+        mTitle.insertAdjacentHTML('afterend', htmlCode);
+    } else {
+        htmlCode = '<div id="mHomeCourseList">' + '<table class="mTitle"><tbody><tr><td style="padding: 10px; font-weight: 700; font-size: 18px" width="100%">' + title + '</td></tr></tbody></table>' + '<div class="course_category_tree clearfix "><div class="content">' + htmlCode + '</div></div>' + '</div>';
+        document.querySelector('div[role="main"]').innerHTML += htmlCode;
+    }
+    var subcategories = document.querySelectorAll("div.subcategories");
+    for (let i = 0; i < subcategories.length; i++) {
+        subcategories[i].style.visibility = "hidden";
+    }
+    $('div.course_category_tree > div.collapsible-actions').remove();
+    let categorybrowse = document.querySelectorAll('div.category-browse'); // $('div.courses.category-browse').remove();
+    for (let i = 0; i < categorybrowse.length; i++) {
+        categorybrowse[i].remove();
+    }
+    let moreinfo = document.querySelectorAll('div.moreinfo');
+    for (let i = 0; i < moreinfo.length; i++) {
+        moreinfo[i].remove();
+    }
+    let ulteachers = document.querySelectorAll('ul.teachers');
+    for (let i = 0; i < ulteachers.length; i++) {
+        ulteachers[i].remove();
+    }
+    if (mIsMobile) {
+        document.querySelector('.btnDDCourseType').style.width = '180px';
+        document.querySelector('.ddCourseTypeContent').style.width = '180px';
+    }
+    $('div.coursebox.clearfix.mUncatted:visible').last().addClass('last');
+    mGetTeacherListForDuplicates();
+}
+
+function mGetTeacherListForDuplicates() {
+    let aCourseTypeHasDuplicates = document.querySelectorAll('a.aCourseTypeHasDuplicates');
+    for (let i = 0; i < aCourseTypeHasDuplicates.length; i++) {
+        let id = aCourseTypeHasDuplicates[i].id;
+        let courseid = aCourseTypeHasDuplicates[i].getAttribute('courseid');
+        let teachers = mGetTeacher(courseid);
+        if (teachers != undefined || teachers != '') {
+            // $(this).attr('title', 'Teachers: ' + teachers);
+            if (teachers != '') {
+                tippy("#" + id, {
+                    theme: 'arc',
+                    content: 'Teachers: ' + teachers,
+                    arrow: false,
+                    followCursor: true,
+                    placement: 'top-start',
+                    zIndex: 99999,
+                });
+            }
+        }
+    }
+}
+
+// New function to analyze course id and name -> id, name, type, tag and link
+function mCourseToString(courseid, coursename) {
+    var name = "";
+    var type = "Others";
+    if (coursename.includes('(Section ')) {
+        let sections = coursename.substring(coursename.lastIndexOf('(Section ') + 9, coursename.lastIndexOf(')'));
+        let sectioncode = [];
+        if (sections.includes('/')) {
+            sectioncode = sections.split('/');
+        } else {
+            sectioncode.push(sections);
+        }
+        let min = Math.min(...sectioncode);
+        let max = Math.max(...sectioncode);
+        if (max < 10000) {
+            type = 'Section ' + sections;
+        } else if (min > 9999) {
+            type = 'Tutorial ' + sections;
+        } else { // max > 9999, and min < 10000
+            type = 'Combined ' + sections;
+        }
+        name = coursename.split(' (Section ')[0];
+    } else if (coursename.includes('(All Sections)')) {
+        name = coursename.split(' (All Sections)')[0];
+        type = 'All Sections';
+    } else {
+        name = coursename;
+    }
+    if (coursename.includes('[') && coursename.includes(']') && !name.includes('[') && !name.includes(']')) {
+        name = name + ' ' + coursename.substring(coursename.lastIndexOf('['), coursename.lastIndexOf(']') + 1);
+    }
+    return name + "|" + courseid + "|" + type;
+}
+
+// var mScrolled = 0;
+
+function mShowCourseType(courseserial) {
+    $('div.ddCourseTypeContent[courseserial=' + courseserial + ']').css('z-index', '9999');
+    $('div.ddCourseTypeContent[courseserial=' + courseserial + ']').css('display', 'block');
+    // mScrolled = $('div.ddCourseTypeContent[courseserial=' + courseserial + ']').height();
+    // mScrollRegionMain();
+}
+
+function mHideCourseType(courseserial) {
+    $('div.ddCourseTypeContent[courseserial=' + courseserial + ']').css('z-index', '0');
+    $('div.ddCourseTypeContent[courseserial=' + courseserial + ']').css('display', 'none');
+    // mRevertScrollRegionMain();
+}
+
+function mViewCourse(v) {
+    if (v < 0) {
+        return;
+    }
+    window.location.href = window.location.origin + "/course/view.php?id=" + v;
+}
+
+// function mScrollRegionMain() {
+    // document.querySelector('#region-main').scrollTop = mScrolled;
+// }
+
+// function mRevertScrollRegionMain() {
+    // document.querySelector('#region-main').scrollTop = -mScrolled;
+// }
+
+function mMainFadeIn() {
+    $('div#page-content').fadeIn(10);
+}
+
+function mPageFinalActions() {
+    $('div.coursebox.clearfix.mUncatted:visible').last().addClass('last');
+    // Bugfix: BUSI3046 (2) [2022 S1] [LT3] Try Peer Feedback Procedure
+    if (window.location.href.includes('/mod/workshop/')) {
+        $('.phase').children().css('height', 'auto');
+    }
+}
+
+function mPageReady() {
+    setTimeout(mAddCatNav, 1000);
+    // 20220919: Fixing dragging questions in quiz
+    try {
+        if (window.location.href.includes('mod/quiz/')) {
+            console.log('Fixing dragging questions in quiz');
+            $('div.qtext').find('span').each(function() {
+                if ($(this).hasClass('drop') && $(this).hasClass('active')) {
+                    $(this).css('width', '184px');
+                    $(this).css('height', '26px');
+                    $(this).css('line-height', '26px');
+                }
+            });
+            $('div.answercontainer').find('span').each(function() {
+                if ($(this).hasClass('draghome') && ($(this).hasClass('dragplaceholder') || $(this).hasClass('unplaced'))) {
+                    $(this).css('width', '184px');
+                    $(this).css('height', '28px');
+                    $(this).css('line-height', '26px');
+                }
+            });
+        }
+    } catch (e) {
+        console.log(e);
+    }    
+    if (document.location.href.includes('/course/index.php') || document.location.href.endsWith('hkbu.edu.hk') || document.location.href.endsWith('hkbu.edu.hk/') || document.location.href.endsWith('hkbu.edu.hk/index.php')) {
+        setTimeout(mMainFadeIn, 1000);
+    }
+    if (mIsMobile && (document.location.href.endsWith('hkbu.edu.hk') || document.location.href.endsWith('hkbu.edu.hk/') || document.location.href.endsWith('hkbu.edu.hk/index.php'))) {
+        setTimeout(mMobileNav, 3000);
+    }
+    setTimeout(mPageFinalActions, 3000);
+    // if (mDisableEnhancement() || mIsAdm()) {
+    //     return;
+    // }
+}
+
+// Bugfix: BUSI3046 (2) [2022 S1] [LT3] Try Peer Feedback Procedure
+setInterval(function () {
+    let c = document.querySelectorAll('div.collapsibleregion');
+    for (let i = 0; i < c.length; i++) {
+        if (!c[i].classList.contains('collapsed')) {
+            c[i].removeAttribute('style');
+        }
+    }
+}, 1000);
+
+if (!mDisableEnhancement()) {
+    document.addEventListener("DOMContentLoaded", function(event) {
+        let listgroupitem = document.querySelectorAll('a.list-group-item.active');
+        for (let i = 0; i < listgroupitem.length; i++) {
+            listgroupitem[i].classList.remove('active');
+        }
+        let mycourses = document.querySelectorAll('a.list-group-item[data-parent-key="mycourses"]');
+        for (let i = 0; i < mycourses.length; i++) {
+            mycourses[i].style.display = "none";
+        }
+        try {
+            document.querySelector('div.list-group-item[data-key="mycourses"]').style.display = "none";
+            document.querySelector('a.list-group-item[data-key="home"]').querySelector('span.media-body').innerHTML = "<font color='#014898'><b>" + document.querySelector('a.list-group-item[data-key="home"]').querySelector('span.media-body').innerText + "</b></font>";
+            document.querySelector('.categorypicker').remove();
+        } catch (e) {
+            console.log(e);
+        }
+        if (window.location.href.includes('/course/index.php')) {
+            // try {
+            //     document.querySelector('div#page-content').style.display = "none";
+            // } catch (e) {
+            //     console.log(e);
+            // }
+            let titleHtml = "<table class='mTitle'><tr><td width='100%' style='padding: 10px; font-weight: 700; font-size: 16px'>" + document.querySelector('div.page-header-headings').innerText + "</td></tr></table>";
+            let simplesearchform = document.querySelector("div.simplesearchform").insertAdjacentHTML('afterend', titleHtml);
+            if (!mIsAdm()) {
+                mPrepareCourseList();
+            }
+        }
+        if (document.location.href.endsWith('hkbu.edu.hk') || document.location.href.endsWith('hkbu.edu.hk/') || document.location.href.endsWith('hkbu.edu.hk/index.php')) {
+            // document.querySelector('div#page-content').style.display = "none";
+            try { 
+                if (!mIsAdm()) {
+                    let enrolledYrSem = mGetEnrolledYrSem();
+                    let latestYrSem = mLatestSemCatTitle.substring(0,4) + mLatestSemCatTitle.charAt(mLatestSemCatTitle.length-1);
+                    if (enrolledYrSem.includes(latestYrSem)) {
+                        mPrepareCourseList();
+                    }
+                }
+            } catch (e) {
+                console.log(e);
+            }
+        }
+        // Search box
+        try {
+            var searchPlaceholder = '';
+            var formControl = document.querySelectorAll('input.form-control');
+            for (let i = 0; i < formControl.length; i++) {
+                if (formControl[i].id != undefined && formControl[i].id.startsWith('searchinput')) {
+                    if (searchPlaceholder == '') {
+                        searchPlaceholder = formControl[i].getAttribute('placeholder');
+                    }
+                    formControl[i].setAttribute('placeholder', '');
+                    formControl[i].classList.add('mSearchCourses');
+                }
+            }    
+            var simplesearchform = document.querySelectorAll('div.simplesearchform');
+            for (let i = 0; i < simplesearchform.length; i++) {
+                let inputgroup = simplesearchform[i].querySelector('div.input-group');
+                if (inputgroup != null) {
+                    inputgroup.insertAdjacentHTML('beforebegin', '<span class="searchPlaceholder">' + searchPlaceholder + '</span>&nbsp;&nbsp;&nbsp;&nbsp; ');
+                }
+                if (i > 0) {
+                    simplesearchform[i].style.display = "none";
+                }
+            }
+            var searchIcon = document.querySelectorAll('button.search-icon');
+            for (let i = 0; i < searchIcon.length; i++) {
+                searchIcon[i].classList.remove('btn-primary');
+                searchIcon[i].innerHTML = '<img style="width: 16px; height: 16px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC5SURBVHgB1ZKBDcIgEEW/xgEYgVEYwQ1kA92gbKAbyAhu4Ai6AW7gCPUI39iYFgrRRF/yA4HrK+EA/gkl6SQXSeB4lGhUoim4U+Aknmu9ZFMrChg/hafQYAY7FutMzZkpEu/mVKix/KEa21wO5rHgijw3jrokewo/wgGpizmhR2pQEU3ZfmJ/i3RfFjOx/CBwbiRrvJ5FTIcKDFL7+0HiiePTcS3CiKJYv627VuEU7uvCFdpxHBf4eR7pGzCPUw2segAAAABJRU5ErkJggg==">';
+            }
+        } catch (e) {
+            console.log(e);
+        }
+        // D-flex
+        try {
+            var dflex = document.querySelector("header#page-header").querySelectorAll(".d-flex");
+            dflex[dflex.length-1].style.alignItems = 'center';
+            dflex[dflex.length-1].style.justifyContent = 'center';
+            dflex[dflex.length-1].style.width = '100%';
+        } catch (e) {
+            console.log(e);
+        }
+        // Min-height of #region-main
+        try {
+            document.getElementById("region-main").style.minHeight = "450px";
+        } catch (e) {
+            console.log(e);
+        }
+    });
+    window.addEventListener('load', function(event) {
+        // mFixWidth();
+        setTimeout(mPageReady, 2000);
+        if (!mIsAdm()) {
+            if (document.location.href.endsWith('/course/index.php')) {
+                window.location.replace(window.location.origin);
+            }
+        }
+    });
+} else {
+    document.addEventListener("DOMContentLoaded", function(event) {
+        let v = document.querySelectorAll('div.list-group-item[data-key="mycourses"]');
+        for (let i = 0; i < v.length; i++) {
+            v[i].style.display = 'block';
+        }
+        v = document.querySelectorAll('a.list-group-item[data-parent-key="mycourses"]');
+        for (let i = 0; i < v.length; i++) {
+            v[i].style.display = 'block';
+        }
+        $('a.list-group-item[data-key="home"]').find('span.media-body').html("<font color='#014898'><b>" + $('a.list-group-item[data-key="home"]').find('span.media-body').text() + "</b></font>");
+    });
+}
+</script>
+<!-- END: Added by Priere [ARC] -->
+
+    <div id="page" class="container-fluid mt-0">
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-12">
+                <section id="region-main" class="col-12" aria-label="Content">
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><div class="my-1 my-sm-5"></div>
+<div class="row justify-content-center">
+<div class="col-xl-9 col-sm-9 ">
+<script>
+    function showOthLogin() {
+        document.getElementById("bu_std_login").style.display = "none";
+        document.getElementById("bu_oth_login").style.display = "block";
+        refreshCaptcha();
+    }
+    function showStdLogin() {
+        document.getElementById("bu_std_login").style.display = "block";
+        document.getElementById("bu_oth_login").style.display = "none";
+    }
+    function refreshCaptcha() {
+        $.ajax({
+            url: "/bucaptcha/refreshcaptcha.php",
+            type: "post",
+            dataType: 'json',
+            success: function(data) {
+                $("#imgcode").attr('src', data.imgsrc);
+            }
+        });
+    }
+</script>
+<div class="card" id="bu_login_panel">
+    <!--<div class="card-block">-->
+        <!--<div class="card-body">-->
+        <div class=loginbox">
+            <div class="row justify-content-md-center">
+                <div class="col-md-5 loginpanel">
+                    <div class="bu_login_logo">
+                        <image alt="HKBU Moodle" src="/bupix/theme/Logo_HKBUMoodle.png">
+                    </div>
+                    <div id="bu_std_login">
+                        <input type="button" id="ssoidLogin" onclick="javascript:location.href='https://iss.hkbu.edu.hk/buam/Auth?request_srvc_id=ITO-BUMOODLE&server_ip=qNj2z_kI4huTH4ExN-5tu4ZSosDOTZw6EeaLWWce1SQ='" value="HKBU Staff/Student Login"></input>
+                        <br />
+                        <input type="button" id="otherLogin" onclick="showOthLogin()" value="Other Eligible User"></input>
+                    </div>
+                    <div id="bu_oth_login" style="display: none;">
+                        <form class="mt-3" action="https://buelearning.hkbu.edu.hk/login/index.php" method="post" id="login">
+                            <input id="anchor" type="hidden" name="anchor" value="">
+                            <script>document.getElementById('anchor').value = location.hash;</script>
+                            <input type="hidden" name="logintoken" value="Wy8rGuoYM1uEbUquMzESYll0jdUyxX69">
+                            <div class="form-group">
+                                <label for="username" class="sr-only">
+                                        Username
+                                </label>
+                                <input type="text" name="username" id="username"
+                                    class="form-control"
+                                    value=""
+                                    placeholder="Username"
+                                    autocomplete="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="sr-only">Password</label>
+                                <input type="password" name="password" id="password" value=""
+                                    class="form-control"
+                                    placeholder="Password"
+                                    autocomplete="new-password">
+                            </div>
+                            <div class="bu_captcha">
+                                <img id="imgcode" src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAAeAgMAAACapzIGAAAACVBMVEU1YoIVauvr7O1iohfZAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA80lEQVQokY2Tyw3DIAyGrRyZouqp9R7doF2gx0xRcaqYAnEyTFkexjF5qZaSWP74/RKB16nBnDBV+yY2x0+2mPGJNRxUJFQhLhgV1D5jK0IFfMc4FYfcQW2amkt0yak/oPMTzL4mN9k3pkQaplSmy2prA2ZUgF2wJDcl6Dt2flUb4JbIVly6GObogxlJbirjOe4NEzaMyQ+LYTXBNKxD4Xbc8Di2zaTUC0bVWe0gwrXJjLQTePe9cydrGo1UcldSb4507FQM5fXfZRrM7eKwV2S8ikFfJ1HjQWUaa8sx+SMivLfipQ2lXtct2SLoH+7B36dEfsNtFx+dS9uDAAAAAElFTkSuQmCC onclick="refreshCaptcha()"></img>
+                                <img id="refreshcaptcha" src="/bupix/theme/refresh.png" style="height:20px; width:20px;" onclick="refreshCaptcha()"></img>
+                                <input type="text" name="usercaptcha" id="usercaptcha" value=""
+                                    class="form-control"
+                                    placeholder="Captcha">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block mt-3" id="loginbtn">Login</button>
+                        </form>
+                        <div align="center">
+                            <a style="color: white;align: center;" href="#" onclick="showStdLogin()">Return to Main Page</a>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="bu_login_btn_footer">
+                       <input type="image" id="buhelpbtn" src="/bupix/theme/btn_loginpage_NeedHelp_hkbu.png" value="" onclick="window.location='/help/bumoodle_help.php'">
+                       <input type="image" id="buscemoodle" src="/bupix/theme/btn_loginpage_scemoodle.png" value="" onclick="window.location='https://scemoodle.hkbu.edu.hk'">
+                    </div>
+                </div>
+
+                <div class="col-md-5 signuppanel">
+                    <div class="bu_login_notice" style="display: block;">
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="bu_best_browser" id="bu_best_browser_4">
+                <p>Best viewed with Chrome version 30, Firefox version 25, Edge 10 and Safari version 6 or above.</p>
+            </div>
+        </div>
+    <!--</div>-->
+</div>
+</div>
+</div></div>
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer id="page-footer" class="py-3 bg-dark text-light">
+        <div class="container">
+            <div id="course-footer"></div>
+
+
+            <div class="logininfo">You are not logged in.</div>
+            <div class="homelink"><a href="https://buelearning.hkbu.edu.hk/">HKBU Moodle</a></div>
+            <div class="tool_dataprivacy"><a href="https://buelearning.hkbu.edu.hk/admin/tool/dataprivacy/summary.php">Data retention summary</a></div><a href="https://download.moodle.org/mobile?version=2021051706.02&amp;lang=en&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Get the mobile app</a>
+            
+<script type="text/javascript">
+bulogincheck();
+</script><script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://buelearning.hkbu.edu.hk/lib/requirejs.php/1659180443/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://buelearning.hkbu.edu.hk/lib/javascript.php/1659180443/lib/jquery/jquery-3.5.1.min',
+        jqueryui: 'https://buelearning.hkbu.edu.hk/lib/javascript.php/1659180443/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://buelearning.hkbu.edu.hk/lib/javascript.php/1659180443/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://buelearning.hkbu.edu.hk/lib/javascript.php/1659180443/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('en');
+});;
+
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader'], function() {
+  M.util.js_complete('theme_boost/loader');
+});
+;
+
+            require(['jquery'], function($) {
+                if ($('#username').val()) {
+                    $('#password').focus();
+                } else {
+                    $('#username').focus();
+                }
+            });
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(1, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","ok":"OK","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL","collapseall":"Collapse all","expandall":"Expand all"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} links to this file","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
+});
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random63f87b6bc1ec82'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63f87b6bc1ec82'); });
+})();
+//]]>
+</script>
+
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
